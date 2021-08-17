@@ -1,0 +1,17 @@
+{
+  "name": "fylo-dark-theme-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo dark theme landing page challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "lessc css/less-styles.less css/styles.css",
+    "less-watch": "less-watch-compiler dist/ css/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less-watch-compiler": "^1.16.2"
+  }
+}

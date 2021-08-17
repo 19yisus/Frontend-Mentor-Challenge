@@ -1,0 +1,327 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: linear-gradient(to bottom, hsl(217, 28%, 15%), hsl(218, 28%, 13%));
+}
+.background {
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  background-attachment: scroll;
+  color: hsl(0, 0%, 100%);
+  max-width: 100%;
+  max-height: 100%;
+}
+.background .navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.background .navbar .logo img {
+  width: 150px;
+}
+.background .navbar .links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 25%;
+}
+.background .navbar .links a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.background .navbar .links a:hover {
+  text-decoration: underline;
+}
+.background .main {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 50%;
+}
+.background .main .main-content {
+  display: flex;
+  flex-direction: column;
+}
+.background .main .main-content .main-content-text {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.background .main .main-content .main-content-text h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.background .main .main-content .main-content-text p {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.background .main .main-content .main-content-text .content-link {
+  background-color: hsl(176, 68%, 64%);
+  border-radius: 20px;
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  margin: auto;
+  padding: 10px;
+  width: 30%;
+}
+.background .main .main-content .main-content-text .content-link:hover {
+  background-color: hsl(176, 52%, 55%);
+}
+.background .feactures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 20px;
+  margin: auto;
+  width: 75%;
+}
+.background .feactures .feactures-card-service {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.background .feactures .feactures-card-service h3 {
+  font-weight: 700;
+  font-size: 23px;
+}
+.background .feactures .feactures-card-service p {
+  font-weight: 500;
+}
+.background .about {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 50px;
+  width: 95%;
+}
+.background .about img {
+  width: 50%;
+}
+.background .about .about-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  width: 40%;
+}
+.background .about .about-text h2 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.background .about .about-text p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.background .about .about-text a {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: hsl(176, 68%, 64%);
+  text-decoration: underline;
+}
+.background .about .about-text a img {
+  width: 20px;
+}
+.background .testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+.background .testimonials .testimonials-card {
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 10px;
+  position: relative;
+}
+.background .testimonials .testimonials-card .Quotes {
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  z-index: -1;
+}
+.background .testimonials .testimonials-card .card-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 25px;
+}
+.background .testimonials .testimonials-card .card-content p {
+  font-weight: 400;
+}
+.background .testimonials .testimonials-card .card-content .card-user-testimonials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.background .testimonials .testimonials-card .card-content .card-user-testimonials img {
+  border-radius: 100%;
+  object-fit: fill;
+  margin-right: 10px;
+  height: 13%;
+  width: 13%;
+}
+.background .testimonials .testimonials-card .card-content .card-user-testimonials .card-text {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 12px;
+}
+.background .testimonials .testimonials-card .card-content .card-user-testimonials .card-text p {
+  font-weight: 700;
+}
+.background ul li {
+  list-style: none;
+}
+.background .footer {
+  background-color: hsl(216, 53%, 9%);
+  margin-top: 20vh;
+  padding-top: 5px;
+  position: relative;
+  width: 100%;
+}
+.background .footer .contact {
+  background-color: hsl(217, 28%, 15%);
+  box-shadow: 20px black;
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  top: -70px;
+  left: 250px;
+  width: 60%;
+}
+.background .footer .contact .contact-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+.background .footer .contact .contact-content h2 {
+  font-weight: 700;
+}
+.background .footer .contact .contact-content p {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.background .footer .contact .contact-content .form-contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.background .footer .contact .contact-content .form-contact input,
+.background .footer .contact .contact-content .form-contact button {
+  display: block;
+  border: none;
+  border-radius: 30px;
+  padding: 13px;
+}
+.background .footer .contact .contact-content .form-contact input {
+  outline: none;
+  width: 60%;
+}
+.background .footer .contact .contact-content .form-contact button {
+  background-color: hsl(176, 68%, 64%);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.background .footer .footer-content {
+  margin-top: 30vh;
+  padding: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.background .footer .footer-content .logo img {
+  width: 130px;
+}
+.background .footer .footer-content .content-info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: auto;
+  width: 100%;
+}
+.background .footer .footer-content .content-info .info-box {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.background .footer .footer-content .content-info .info-box img {
+  width: 10px;
+}
+.background .footer .footer-content .content-info .info-box p {
+  font-size: 12px;
+  width: 90%;
+}
+.background .footer .footer-content .content-info .info-box.social {
+  justify-content: space-evenly;
+}
+.background .footer .footer-content .content-info .info-box.social a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.background .footer .footer-content .content-info .info-box.social a i {
+  font-size: 20px;
+}
